@@ -129,6 +129,6 @@ SPECTACULAR_SETTINGS = {
     'COMPONENT_SPLIT_REQUEST': True,
     'EXTERNAL_DOCS': {
         'description': 'Repositório do Projeto (Github)',
-        'url': 'https://github.com/matheushardman/school-api-django',
+        'url': 'https://github.com/matheushardman/django-school-api',
     }
 }
