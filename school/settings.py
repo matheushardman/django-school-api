@@ -12,6 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
 
@@ -75,7 +76,6 @@ DATABASES = {
 database_url = os.environ.get("DATABASE_URL")
 DATABASES["default"] = dj_database_url.parse(database_url)
 
-
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
@@ -126,7 +126,7 @@ SPECTACULAR_SETTINGS = {
     'DESCRIPTION': 'Desafio Programação na Prática - Desenvolvedor Web Cloud Generation Brasil',
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
-    'COMPONENT_SPLIT_REQUEST': False,
+    'COMPONENT_SPLIT_REQUEST': True,
     'EXTERNAL_DOCS': {
         'description': 'Repositório do Projeto (Github)',
         'url': 'https://github.com/matheushardman/school-api-django',
